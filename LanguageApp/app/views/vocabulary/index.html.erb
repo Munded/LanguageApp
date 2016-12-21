@@ -1,0 +1,18 @@
+<h1>Learn Czech</h1>
+<%= link_to 'Back', controller: 'home' %>
+<table>
+  <thead>
+    <tr>
+      <th>English</th>
+      <th>Czech</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @vocabulary.each do |vocab| %>
+      <tr>
+        <td><%= vocab.english %></td>
+        <td><%= vocab.czech %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
