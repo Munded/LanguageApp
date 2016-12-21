@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 	resources :vocabulary
+	resources :quiz
+
   get 'home/index'
 
   root 'home#index'

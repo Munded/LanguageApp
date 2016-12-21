@@ -1,0 +1,17 @@
+<h1>Quiz Time</h1>
+
+<div>
+	<div>Score: <%= @score %></div>
+	<div>Lives Remaining:<%= @lives %></div>
+</div>
+ <table>
+
+  <tbody>
+    <% @vocabList.each do |vocab| %>
+      <tr>
+        <td><%= vocab.english %></td>
+        <td><%= vocab.czech %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
