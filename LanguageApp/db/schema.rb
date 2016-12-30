@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161221153249) do
+ActiveRecord::Schema.define(version: 20161230165513) do
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "vocabularies", force: :cascade do |t|
     t.string   "english"

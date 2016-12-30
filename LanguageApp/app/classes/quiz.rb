@@ -7,12 +7,6 @@ class VocabularyAppHelper
   end
 
   def getVocabList(letter, vocabList)
-    fullList = []
-
-    CSV.foreach("BeginnerVocab.csv") do |row|
-      fullList << [row[0].strip, row[1].strip]
-    end
-
     selectedList = fullList.select {|item| item[0][0] == letter}
     randomisedList = selectedList.sort {|a, b| rand <=> rand }
   end

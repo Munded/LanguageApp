@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 	resources :vocabulary
 	resources :quiz
+	resources :user
 
   get 'home/index'
 
